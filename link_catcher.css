@@ -2,16 +2,6 @@ body{
     background:#222;  
     color:#666;  
 }  
-#header{  
-    font-family:Arial, Helvetica, sans-serif;  
-    font-size:24px;  
-    font-weight:bold;  
-    text-align:left;  
-    text-indent:35px;  
-    margin: 0 auto;  
-    width:800px;  
-    margin-bottom:10px;  
-}  
 hr{  
     margin: 20px;  
     border:none;  
@@ -21,13 +11,56 @@ hr{
 p{  
     color:#444;  
     text-align:left;  
-    margin-left: 20px;  
+    margin-left: 5px;  
     margin-bottom: 5px;  
 }  
+.tweet:hover .layover {  
+    color:#F6F;  
+    visibility: visible;
+}
+p.error{  
+    color:#FF7878;  
+}
+p.protected{  
+    color:#C0C0C0;  
+}
 #footer{  
     text-align: center;
-    height: 50px;
+    font:20px bold; 
+    height:40px;
+}
+#header{
+    text-align: center;
+    position:fixed;
+    top:0px;
+    margin:auto;
+    z-index:100000;
+    width:100%;
+}
+a.header {  
+    color:#666;  
+}  
+.layover {  
+    visibility: hidden;
 }  
 a{  
     color:#444;  
+}
+span.plus {  
+    color:#0F0;  
 }  
+span.red {  
+    color:#F00;  
+}  
+.plus:before {
+    content: "+ ";
+    color:#0F0;
+    font:20px bold;
+    height:40px;
+}
+.minus:before {
+    content: "- ";
+    color:#F00;
+    font:20px bold;
+    height:40px; 
+}
